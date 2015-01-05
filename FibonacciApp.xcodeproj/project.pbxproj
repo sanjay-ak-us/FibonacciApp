@@ -13,6 +13,7 @@
 		92CA00FC1A5A9C5D00D19FB2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92CA00FB1A5A9C5D00D19FB2 /* Images.xcassets */; };
 		92CA00FF1A5A9C5D00D19FB2 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 92CA00FD1A5A9C5D00D19FB2 /* LaunchScreen.xib */; };
 		92CA010B1A5A9C5D00D19FB2 /* FibonacciAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92CA010A1A5A9C5D00D19FB2 /* FibonacciAppTests.swift */; };
+		92CA01151A5A9DC800D19FB2 /* FIbonacciSequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92CA01141A5A9DC800D19FB2 /* FIbonacciSequence.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		92CA01041A5A9C5D00D19FB2 /* FibonacciAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FibonacciAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		92CA01091A5A9C5D00D19FB2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		92CA010A1A5A9C5D00D19FB2 /* FibonacciAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FibonacciAppTests.swift; sourceTree = "<group>"; };
+		92CA01141A5A9DC800D19FB2 /* FIbonacciSequence.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FIbonacciSequence.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 				92CA00F41A5A9C5D00D19FB2 /* AppDelegate.swift */,
 				92CA00F61A5A9C5D00D19FB2 /* ViewController.swift */,
 				92CA00F81A5A9C5D00D19FB2 /* Main.storyboard */,
+				92CA01141A5A9DC800D19FB2 /* FIbonacciSequence.swift */,
 				92CA00FB1A5A9C5D00D19FB2 /* Images.xcassets */,
 				92CA00FD1A5A9C5D00D19FB2 /* LaunchScreen.xib */,
 				92CA00F21A5A9C5D00D19FB2 /* Supporting Files */,
@@ -213,6 +216,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				92CA00F71A5A9C5D00D19FB2 /* ViewController.swift in Sources */,
+				92CA01151A5A9DC800D19FB2 /* FIbonacciSequence.swift in Sources */,
 				92CA00F51A5A9C5D00D19FB2 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
