@@ -26,6 +26,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        self.updateFibonacciSequence( );
     }
 
     override func didReceiveMemoryWarning() {
@@ -33,16 +34,18 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-    @IBAction func updateFibonacciSequence(sender: AnyObject, forEvent event: UIEvent) {
-        var totalItems:UInt = UInt(numberOfItemsSlider.value);
+    @IBAction func updateFibonacciSequence() {
         var zero:Bool = includesZeroSwitch.on;
-        fibonacciSequence = FibonacciSequence(numberOfItemsInSequence: totalItems, includesZero: zero);
         if(zero){
+            numberOfItemsSlider.maximumValue = 94;
             includesZeroLabel.text = "Yes";
         }
         else{
+            numberOfItemsSlider.maximumValue = 93;
             includesZeroLabel.text = "No";
         }
+        var totalItems:UInt = UInt(numberOfItemsSlider.value);
+        fibonacciSequence = FibonacciSequence(numberOfItemsInSequence: totalItems, includesZero: zero);
         numberOfItemsLabel.text = String(totalItems);
         textView.text = fibonacciSequence.values.description;
     }

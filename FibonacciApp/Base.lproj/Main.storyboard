@@ -19,7 +19,7 @@
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KGK-vN-fxb">
                                 <rect key="frame" x="154" y="437" width="51" height="31"/>
                                 <connections>
-                                    <action selector="updateFibonacciSequence:forEvent:" destination="vXZ-lx-hvc" eventType="valueChanged" id="dfZ-g5-MQq"/>
+                                    <action selector="updateFibonacciSequence" destination="vXZ-lx-hvc" eventType="valueChanged" id="iwY-MJ-nFi"/>
                                 </connections>
                             </switch>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" pagingEnabled="YES" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0fG-bd-cl8">
@@ -39,7 +39,7 @@
                                 <rect key="frame" x="22" y="518" width="284" height="31"/>
                                 <color key="tintColor" red="0.1441665402" green="0.65098248110000001" blue="0.078143933619999995" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
-                                    <action selector="updateFibonacciSequence:forEvent:" destination="vXZ-lx-hvc" eventType="valueChanged" id="cAP-Zo-mex"/>
+                                    <action selector="updateFibonacciSequence" destination="vXZ-lx-hvc" eventType="valueChanged" id="q1s-cI-zor"/>
                                 </connections>
                             </slider>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Yes" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iu5-ZE-z5D">
