@@ -19,7 +19,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var includesZeroLabel: UILabel!;
     
     
-    @IBOutlet weak var numberOfItemsLabel: UILabel!;
+    @IBOutlet weak var numberOfItemsLabel: UILabel!
+    
     
     @IBOutlet weak var numberOfItemsSlider: UISlider!;
     
@@ -35,13 +36,21 @@ class ViewController: UIViewController {
     }
 
     @IBAction func updateFibonacciSequence() {
+        var sliderMax = 94;
+        var max_32:UInt = UInt(UInt32.max);
+        var max:UInt = UInt.max;
+        
+        if(max_32 == max){
+            //app is running on 32bit device
+            sliderMax = 48;
+        }
         var zero:Bool = includesZeroSwitch.on;
         if(zero){
-            numberOfItemsSlider.maximumValue = 94;
+            numberOfItemsSlider.maximumValue = Float(sliderMax);
             includesZeroLabel.text = "Yes";
         }
         else{
-            numberOfItemsSlider.maximumValue = 93;
+            numberOfItemsSlider.maximumValue = Float(sliderMax)-1;
             includesZeroLabel.text = "No";
         }
         var totalItems:UInt = UInt(numberOfItemsSlider.value);
